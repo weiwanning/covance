@@ -38,7 +38,7 @@ var svg = d3.select("body").append("svg")
     .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-d3.json("http://weiwanning.github.io/Covance/irisd3.json", function(error, root) {
+d3.json("http://weiwanning.github.com/Covance/Irisd3.json", function(error, root) {
   var nodes = tree.nodes(root),
       links = tree.links(nodes);
 
