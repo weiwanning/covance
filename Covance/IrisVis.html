@@ -19,6 +19,7 @@
 }
 
 </style>
+</meta>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
@@ -38,7 +39,7 @@ var svg = d3.select("body").append("svg")
     .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-d3.json("http://weiwanning.github.com/Covance/Irisd3.json", function(error, root) {
+d3.json('http://weiwanning.github.com/Covance/Irisd3.json', function(error, root) {
   var nodes = tree.nodes(root),
       links = tree.links(nodes);
 
@@ -67,3 +68,4 @@ d3.json("http://weiwanning.github.com/Covance/Irisd3.json", function(error, root
 d3.select(self.frameElement).style("height", diameter - 150 + "px");
 
 </script>
+</body>
